@@ -11,6 +11,36 @@
     <link rel="stylesheet" href="../../assets/css/estilos.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-md bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+            <div class="container-fluid mx-3">
+              <a class="navbar-brand" href="#">Tienda Tech <i class="bi bi-pc-display"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Formularios
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../views/categorias.html">Categorías</a></li>
+                      <li><a class="dropdown-item active" href="../views/productos.html">Productos</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                  <button class="btn " type="submit"><i class="bi bi-search text-white"></i></button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
     <main>
         <div class="container d-flex justify-content-center">
             <div class="mt-5 col-2 d-none d-md-flex justify-content-end">
@@ -29,17 +59,45 @@
                         <div class="col-2"></div>
                     </div>
                     <h2 class="text-center d-none d-md-block">Productos</h2>
-                    <form>
+                    <form class="row">
                         <input type="number" id="producto_id" hidden>
-                        <div class="my-3">
-                          <label for="producto_name" class="h6 form-label">Producto:</label>
-                          <input type="text" id="producto_name" class="form-control" placeholder="Nombre del producto...">
+                        <div class="mt-3 col-12">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="producto_name" placeholder="Nombre del producto...">
+                                <label for="producto_name">Nombre del producto</label>
+                              </div>
                         </div>
-                        <div class="my-3">
-                          <label for="producto_desc" class="h6 form-label">Descripción:</label>
-                          <textarea type="text" id="producto_desc" class="form-control" placeholder="Descripción del producto..."></textarea>
+                        <div class="my-2 col-12 col-md-6">
+                            <div class="form-floating">
+                                <select class="form-select" id="producto_categ">
+                                  <option selected>Seleccionar categoría</option>
+                                  <option value="1">Categoria1</option>
+                                  <option value="2">Categoria2</option>
+                                  <option value="3">Categoria3</option>
+                                </select>
+                                <label for="producto_categ">Categoría</label>
+                              </div>
                         </div>
-                        <div class="text-center">
+                        <div class="my-2 col-12 col-md-6">
+                            <div class="input-group">
+                                <span class="input-group-text">ARS $</span>
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="producto_price" placeholder="Precio...">
+                                    <label for="producto_price">Precio</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-2 col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Descripción..." id="producto_desc" style="height: 6rem"></textarea>
+                                <label for="producto_desc">Descripción</label>
+                              </div>
+                        </div>
+                        <div class="my-2 col-12">
+                            <label for="producto_img" class="form-label h6 mx-2">Imagen</label>
+                            <input class="form-control " id="producto_img" type="file">
+                        </div>
+                        <div class="text-center mt-2">
                             <button type="reset" class="btn btn-sm btn-outline-primary m-2 col-10 col-md-3">Cancelar</button>
                             <button type="submit" class="btn btn-sm btn-primary m-2 col-10 col-md-3">Guardar</button>
                         </div>
