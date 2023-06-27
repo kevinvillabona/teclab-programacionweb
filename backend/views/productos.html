@@ -63,10 +63,10 @@
                     <h2 class="text-center d-none d-md-block">Productos</h2>
                     <form class="row" method="post" id="form_producto">
                         <input type="number" id="producto_id" hidden>
-                        <div class="mt-3 col-12">
+                        <div class="mt-3 mb-2 col-12">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="producto_name" placeholder="Nombre del producto..." autocomplete="off" required>
-                                <label for="producto_name">Nombre del producto</label>
+                                <label for="producto_name" class="text-secondary">Nombre del producto</label>
                               </div>
                         </div>
                         <div class="my-2 col-12 col-md-6">
@@ -85,21 +85,21 @@
                                 <span class="input-group-text">ARS $</span>
                                 <div class="form-floating">
                                     <input type="number" class="form-control" id="producto_price" placeholder="Precio..." autocomplete="off" required>
-                                    <label for="producto_price">Precio</label>
+                                    <label for="producto_price" class="text-secondary">Precio</label>
                                 </div>
                             </div>
                         </div>
                         <div class="my-2 col-12">
                             <div class="form-floating">
                                 <textarea class="form-control" placeholder="Descripción..." id="producto_desc" style="height: 6rem" autocomplete="off" required></textarea>
-                                <label for="producto_desc">Descripción</label>
+                                <label for="producto_desc" class="text-secondary">Descripción</label>
                               </div>
                         </div>
                         <div class="my-2 col-12">
                             <label for="producto_img" class="form-label h6 mx-2">Imagen</label>
-                            <input class="form-control " id="producto_img" type="file" accept=".jpg,.jpeg" autocomplete="off" required>
+                            <input class="form-control text-secondary" id="producto_img" type="file" accept=".jpg,.jpeg" autocomplete="off" required>
                         </div>
-                        <div class="text-center mt-2">
+                        <div class="text-center mt-3">
                             <input type="reset" class="btn btn-sm btn-outline-primary m-2 col-10 col-md-3">
                             <input type="submit" class="btn btn-sm btn-primary m-2 col-10 col-md-3">
                         </div>

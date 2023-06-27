@@ -1,11 +1,15 @@
 # [`TECLAB`](https://www.teclab.edu.ar/carrera/tecnico-superior-en-programacion/) | Programación Web
 
-##### ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
 
+<div align="center">
+
+  ##### ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+
+</div>
 <details>
 <summary>
   
-  #### API 1 - Fecha límite: 22/06/2023 (Entregado el 20/06/2023)
+  #### API 1 - Entregado el 20/06/2023
   
 </summary>
   
@@ -20,12 +24,14 @@
 >- Generar el código html de un formulario para el alta de categorías.
 >- Generar el código html de un formulario para el alta de productos.
 >- Estilizar los formularios para dejarlos de forma amigable para los usuarios (se permite el uso de librerías externas).
+>
+> #### _Fecha de entrega: 22/06/2023_
 </details>
 
 <details>
 <summary>
   
-  #### API 2 - Fecha límite: 29/06/2023 (Entregado el 25/06/2023)
+  #### API 2 - Entregado el 25/06/2023
   
 </summary>
   
@@ -39,12 +45,14 @@
 >- Crear un archivo javascript llamado validaciones.js.
 >- Dentro del mismo, monitorear cuando se intenta postear cada uno de los formularios.
 >- Al momento de hacer un post de cualquiera de ellos, realizar la validación de sus campos. Si uno o más campos están vacíos, mostrar un alerta concatenando dichos errores.
+>
+> #### _Fecha de entrega: 29/06/2023_
 </details>
 
 <details>
 <summary>
   
-  #### API 3 - Fecha límite: 13/07/2023 (Entregado el -)
+  #### API 3 - Entregado el -
   
 </summary>
   
@@ -62,12 +70,14 @@
 >- Trabajar en esos archivos de controlador monitoreando si vienen parámetros por post. Si existen, debemos construir un objeto correspondiente y llamar a su función de guardado.
 >- Crear los listados de productos y de categorías partiendo de los controladores "lista_productos.php" y "lista_categorias.php" llamando a sus correspondientes archivos HTML de vista.
 >- Mostrar el listado correspondiente a cada una de las vistas, e insertar un botón _Agregar_. Éste deberá tener un link al controlador correspondiente.
+>
+> #### _Fecha de entrega: 13/07/2023_
 </details>
 
 <details>
 <summary>
   
-  #### API 4 - Fecha límite: 20/07/2023 (Entregado el -)
+  #### API 4 - Entregado el -
   
 </summary>
   
@@ -76,4 +86,11 @@
 > 
 > #### Consigna
 >
+> #### _Fecha de entrega: 20/07/2023_
 </details>
+
+
+## Capturas de pantalla
+<p align="center">
+
+</p>

@@ -25,7 +25,7 @@ $(document).ready(function(){
         const img = e.target.files[0];
         const extension = img.name.split(".").pop().toLowerCase();
       
-        if (extension !== "jpeg" && extension !== "jpeg") {
+        if (extension !== "jpg" && extension !== "jpeg") {
             alert('Por favor, selecciona solo archivos de imagen en formato JPG o JPEG.');
             $('#producto_img').val(''); //Se limpia el input
             return;
@@ -35,7 +35,7 @@ $(document).ready(function(){
     $("#form_producto").on("submit", function(e){
         e.preventDefault();
         
-        const producto_name = $.trim(("#producto_name").val());
+        const producto_name = $.trim($("#producto_name").val());
         const producto_categ = $("#producto_categ").val();
         const producto_price = $.trim($("#producto_price").val());
         const producto_desc = $.trim($("#producto_desc").val());
@@ -43,22 +43,23 @@ $(document).ready(function(){
 
         let error = [];
         if(producto_name ==""){
-            error.push("Por favor, ingrese un nombre.")
+            error.push("Ingrese un nombre.")
         }
         if(producto_categ =="" || producto_categ == null){
-            error.push("Por favor, seleccione una categoría.")
+            error.push("Seleccione una categoría.")
         }
         if(producto_price ==""){
-            error.push("Por favor, ingrese un precio.")
+            error.push("Ingrese un precio.")
         }
         if(producto_desc ==""){
-            error.push("Por favor, ingrese una descripción.")
+            error.push("Ingrese una descripción.")
         }
         if(producto_img == ""){
-            error.push("Por favor, ingrese una imagen.")
+            error.push("Ingrese una imagen.")
         }
         //Si hay algun error, se imprime el alerta con la concatenación de los mismos y se retorna false
         if(error.length > 0){
+            error.unshift("Por favor:");
             alert(error.join("\n"))
             return false;
         }
