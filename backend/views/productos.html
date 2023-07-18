@@ -8,15 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- Otros Estilos -->
-    <link rel="stylesheet" href="../../assets/css/estilos.css">
+    <link rel="stylesheet" href="../assets/css/estilos.css">
     <!-- Favicon -->
-    <link rel="icon" href="../../assets/img/logo_icon.png" type="image/png">
+    <link rel="icon" href="../assets/img/logo_icon.png" type="image/png">
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-md bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
             <div class="container-fluid mx-3">
-              <a class="navbar-brand" href="#"><img src="../../assets/img/logo_tiendatech.png" alt="Tienda Tech" width="150" height="23"></a>
+              <a class="navbar-brand" href="#"><img src="../assets/img/logo_tiendatech.png" alt="Tienda Tech" width="150" height="23"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -30,8 +30,8 @@
                       Formularios
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="../views/categorias.html">Categorías</a></li>
-                      <li><a class="dropdown-item active" href="../views/productos.html">Productos</a></li>
+                      <li><a class="dropdown-item" href="categorias.php">Categorías</a></li>
+                      <li><a class="dropdown-item active" href="productos.php">Productos</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -73,9 +73,11 @@
                             <div class="form-floating">
                                 <select class="form-select" id="producto_categ" autocomplete="off" required>
                                   <option selected disabled>Seleccionar categoría</option>
-                                  <option value="1">Categoria1</option>
-                                  <option value="2">Categoria2</option>
-                                  <option value="3">Categoria3</option>
+
+                                  <?php foreach ($listado_categorias as $categoria){ ?>
+                                    <option value="<?php echo $categoria['id'] ?>"><?php echo $categoria['nombre_categoria']; ?></option>
+                                    <?php } ?> 
+                                     
                                 </select>
                                 <label for="producto_categ">Categoría</label>
                               </div>
@@ -119,6 +121,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-    <script src="../../assets/js/validaciones.js"></script>
+    <script src="../assets/js/validaciones.js"></script>
 </body>
 </html>
