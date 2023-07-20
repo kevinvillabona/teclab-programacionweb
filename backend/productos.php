@@ -1,5 +1,22 @@
 <?php
 
 include '../class/autoload.php';
-$listado_categorias = categorias::listar();
-include './views/productos.html';
+
+if (isset($_POST['action']) && $_POST['action'] == 'guardar') {
+    $nuevoProducto = new Productos();
+    $nuevoProducto -> nombre = $_POST['nombre_producto'];
+    $nuevoProducto -> precio = $_POST['precio_producto'];
+    $nuevoProducto -> categoria_id = $_POST['categoria_id'];
+    $nuevoProducto -> descripcion = $_POST['descripcion_producto'];
+    $nuevoProducto -> imagen = $_POST['imagen_producto'];
+    $nuevoProducto -> guardar();
+}
+else if (isset($_GET['add'])) {
+    include '../class/categorias.php';
+    $listaCategorias = Categorias::category_select();
+    include 'views/productos.html';
+    die();
+}
+
+$listaProductos = Productos::product_select();
+include 'views/lista_productos.html';

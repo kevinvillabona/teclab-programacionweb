@@ -52,7 +52,7 @@
 <details>
 <summary>
   
-  #### API 3 - Entregado el -
+  #### API 3 - Entregado el - 20/07/2023
   
 </summary>
   
@@ -71,7 +71,7 @@
 >- Crear los listados de productos y de categorías partiendo de los controladores "lista_productos.php" y "lista_categorias.php" llamando a sus correspondientes archivos HTML de vista.
 >- Mostrar el listado correspondiente a cada una de las vistas, e insertar un botón _Agregar_. Éste deberá tener un link al controlador correspondiente.
 >
-> #### _Fecha de entrega: 13/07/2023_
+> #### _Fecha de entrega: 20/07/2023_
 </details>
 
 <details>
@@ -86,7 +86,7 @@
 > 
 > #### Consigna
 >
-> #### _Fecha de entrega: 20/07/2023_
+> #### _Fecha de entrega: 27/07/2023_
 </details>
 
 
