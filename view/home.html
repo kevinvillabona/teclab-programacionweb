@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Productos</title>
+    <!-- Bootstrap e Iconos -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Otros Estilos -->
+    <link rel="stylesheet" href="../assets/css/estilos.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="../assets/img/logo_icon.png" type="image/png" />
+
+    <style>
+        .card-img-top{
+            width: 300px; /* Tamaño fijo para el ancho de la imagen */
+            height: 200px; /* Tamaño fijo para la altura de la imagen */
+            object-fit: cover; /* Ajustar la imagen sin deformarla */
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md bg-dark border-bottom border-bottom-dark"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid mx-3">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="../assets/img/logo_tiendatech.png"
+              alt="Tienda Tech"
+              width="150"
+              height="23"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Formularios
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../categorias.php"
+                      >Categorías</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../productos.php"
+                      >Productos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+              <button class="btn" type="submit">
+                <i class="bi bi-search text-white"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container my-5">
+            <h1 class="text-center mb-4">Bienvenidos a Tienda Tech</h1>
+            <h5 class="text-center">Listado de productos</h5>
+            <div class="row">
+        
+              
+              <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                  <img src="https://www.lenovo.com/medias/24913327302-P27h-20220609052931.png?context=bWFzdGVyfHJvb3R8MTI0NjIxfGltYWdlL3BuZ3xoZGYvaGQ5LzE0ODE2Njg3MDk1ODM4LnBuZ3w1OGE3MTNhYmFlMzY4OGQ0OTJkODc4ZmJlODk4ZWMzZDc1NTRjNmQ5ZGUxM2FhYTg0YjdmMTU3OTk2MDI1NGJj" class="card-img-top" alt="Tarjeta gráfica NVIDIA GeForce RTX 3080">
+                  <div class="card-body">
+                    <h5 class="card-title">Monitor 27" ThinkVision P27h-30 Lenovo</h5>
+                    <p class="card-text">Precio: $350000</p>
+                    <p class="card-text">Categoría: Monitor</p>
+                    <p class="card-text">Su pantalla IPS proporciona imágenes nítidas y precisas con ángulos de visualización amplios.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_709561-MLA46223858525_052021-O.webp" class="card-img-top" alt="Procesador AMD Ryzen 9 5950X">
+                  <div class="card-body">
+                    <h5 class="card-title">Procesador AMD Ryzen 9 5950X</h5>
+                    <p class="card-text">Precio: $466299</p>
+                    <p class="card-text">Categoría: Procesador</p>
+                    <p class="card-text">Microprocesador AMD Ryzen 9 5950X 64MB 4.9GHz Am4 de 16 nucleos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_2X_995556-MLA48636203793_122021-F.webp" class="card-img-top" alt="Procesador AMD Ryzen 9 5950X">
+                  <div class="card-body">
+                    <h5 class="card-title">Memoria RAM Fury Impact DDR4 8GB Kingston</h5>
+                    <p class="card-text">Precio: $15699</p>
+                    <p class="card-text">Categoría: Memoria RAM</p>
+                    <p class="card-text">Memoria con formato SODIMM.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_973308-MLA49773498979_042022-O.webp" class="card-img-top" alt="Procesador AMD Ryzen 9 5950X">
+                  <div class="card-body">
+                    <h5 class="card-title">Memoria RAM Premier 16GB Adata</h5>
+                    <p class="card-text">Precio: $29500</p>
+                    <p class="card-text">Categoría: Memoria RAM</p>
+                    <p class="card-text">Memoria con formato SODIMM.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 mb-4">
+                <div class="card product-card">
+                  <img src="https://http2.mlstatic.com/D_NQ_NP_768198-MLU70028224279_062023-O.webp" class="card-img-top" alt="Procesador AMD Ryzen 9 5950X">
+                  <div class="card-body">
+                    <h5 class="card-title">Disco Rígido Western Digital WD10EZEX 1TB</h5>
+                    <p class="card-text">Precio: $29500</p>
+                    <p class="card-text">Categoría: Disco Rígido</p>
+                    <p class="card-text">Este producto posee una interfaz SATA III que se encarga de transferir datos con la placa madre de tu computadora.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="text-center footer">
+        <a
+          href="https://github.com/kevinvillabona"
+          target="_blank"
+          class="h6"
+          style="text-decoration: none"
+          >Kevin Villabona</a
+        >
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/validaciones.js"></script>
+  </body>
+</html>
